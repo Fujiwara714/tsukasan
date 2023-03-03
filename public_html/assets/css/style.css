@@ -1,0 +1,41 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+}
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #29394E;
+  letter-spacing: 0;
+}
+
+.header {
+  width: 100%;
+  min-height: 100px;
+  background-color: #79A92D;
+}
+
+.header__inner {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 1.1713030747vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
