@@ -4,21 +4,48 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/destyle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Gulp - template</title>
 </head>
 <body>
+  <!-- ヘッダー -->
   <header class="header">
     <div class="header__inner">
-      <p>scssファイルの変更を検知しているか確認してみよう</p>
-      <p>テストテストテストテスト</p>
-      <p>テストテストテストテスト</p>
+      <div class="header__inner__logo">
+        <img src="./assets/img/img-logo.svg" alt="株式会社つかさん">
+      </div>
+
+      <div class="header__inner__hamburger">
+        <span class="header__inner__hamburger--line"></span>
+        <span class="header__inner__hamburger--line"></span>
+      </div>
     </div>
   </header>
+  <!-- top -->
+  <section id="top">
+    <div class="slider">
+      <div class="swiper-area">
+        <div class="swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/img/img-FV-01_SP.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/img-FV-02_SP.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/img-FV-03_SP.webp" alt=""></div>
+          </div>
+        </div>
+        <p class="notice">一緒に成長しよう</p>
+      </div>
+      <div class="swiper-button-next"><img src="./assets/img/scroll.svg" alt=""></div>
+
+      <div class="swiper-pagination swiper-pagination--custom"></div>
+    </div>
+
+  </section>
   <main>
 
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

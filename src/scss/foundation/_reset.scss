@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*----------------------------
+汎用: リセットCSS
+----------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* 全ての要素についてpaddingとborderを幅と高さに含める */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* 親要素から引き継ぐ */
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: bottom;
+}
+
+button {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
+  color: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none; /* リサイズ不可 */
+  display: block;
+}
