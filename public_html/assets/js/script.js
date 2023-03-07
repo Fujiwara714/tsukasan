@@ -1,38 +1,29 @@
-const slider = new Swiper('.swiper', {
+//ハンバーガーメニュー
+const hamBtn = document.querySelector('.header__inner__hamburger');
+hamBtn.addEventListener('click', () => {
+  const nav = document.querySelector('.header__nav')
+  const navLines = document.querySelectorAll('.header__nav__ul__li');
+  hamBtn.classList.toggle('is-active');
+  nav.classList.toggle('is-active');
+  navLines.forEach(navLine => {
+    console.log(navLine);
+    navLine.classList.toggle('is-active');
+  })
+});
+
+//スライド
+const sliderTop = new Swiper('.swiperTop', {
   slidesPerView: 1,
-  // loop: true,
+  loop: true,
   // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
+  //   delay: 3000,//単位：ms 1000ms = 1s
+  //   disableOnInteraction: false,//ドラッグしても自動再生が止まらない
   // },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-top-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '.slider .swiper-button-next',
-  },
-})
-
-
-
-
-window.addEventListener('resize', () => {
-  const sp = 768;
-  const windowSize = window.outerWidth;
-  const slideImgs = document.querySelectorAll('.swiper-slide img');
-  if (windowSize >= sp) {
-    slideImgs.forEach((slideImg, index) => {
-      console.log(slideImg);
-      console.log(index + 1);
-      slideImg.setAttribute('src', `./assets/img/img-FV-0${index + 1}_PC.webp`)
-    });
-  } else {
-    slideImgs.forEach((slideImg, index) => {
-      console.log(slideImg);
-      console.log(index + 1);
-      slideImg.setAttribute('src', `./assets/img/img-FV-0${index + 1}_SP.webp`)
-    });
+    nextEl: '.swiper-top-button-next',
   }
 })
-

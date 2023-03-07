@@ -7,17 +7,12 @@
 *::before,
 *::after {
   box-sizing: border-box; /* 全ての要素についてpaddingとborderを幅と高さに含める */
+  outline: 1px solid green;
 }
 
 a {
   text-decoration: none;
   color: inherit; /* 親要素から引き継ぐ */
-}
-
-ol,
-ul,
-li {
-  list-style: none;
 }
 
 body,

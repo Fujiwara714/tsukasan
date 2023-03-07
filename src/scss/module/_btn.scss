@@ -1,1 +1,21 @@
 @use "global" as *;
+
+.entry-btn-pc-no-shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: vw(strip-unit($pc), 400);
+  height: vh(strip-unit($pc), 120);
+  background-color: $primary-color;
+  text-align: center;
+  color: $secondary-color;
+  font-size: rem(24);
+  font-weight: 700;
+  letter-spacing: rem(2.4);
+  cursor: pointer;
+  &::after {
+    content: url(../../../public_html/assets/img/);
+    display: inline-block;
+    width: vw(strip-unit($pc), 20);
+  }
+}

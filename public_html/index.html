@@ -22,27 +22,65 @@
         <span class="header__inner__hamburger--line"></span>
       </div>
     </div>
-  </header>
-  <!-- top -->
-  <section id="top">
-    <div class="slider">
-      <div class="swiper-area">
-        <div class="swiper swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./assets/img/img-FV-01_SP.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/img-FV-02_SP.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/img-FV-03_SP.webp" alt=""></div>
-          </div>
+    <nav class="header__nav">
+      <ul class="header__nav__ul">
+        <li class="header__nav__ul__li">メッセージ</li>
+        <li class="header__nav__ul__li"><a href="#">事業内容</a></li>
+        <li class="header__nav__ul__li"><a href="#">動画で見るつかさん</a></li>
+        <li class="header__nav__ul__li"><a href="#">職場について</a></li>
+        <li class="header__nav__ul__li"><a href="#">募集要項</a></li>
+        <li class="header__nav__ul__li"><a href="#">先輩の声</a></li>
+        <li class="header__nav__ul__li"><a href="#">採用の流れ</a></li>
+        <li class="header__nav__ul__li"><a href="#">よくある質問</a></li>
+        <div class="header__nav__logo">
+          <img src="./assets/img/tsukasan-logo.svg" alt="株式会社つかさん">
         </div>
-        <p class="notice">一緒に成長しよう</p>
-      </div>
-      <div class="swiper-button-next"><img src="./assets/img/scroll.svg" alt=""></div>
-
-      <div class="swiper-pagination swiper-pagination--custom"></div>
+      </ul>
+    </nav>
+    <div class="header__pc--btn">
+      <button id="entry" class='entry-btn-pc-no-shadow'>エントリーはこちら
+      </button>
     </div>
-
-  </section>
+  </header>
   <main>
+    <!-- top -->
+    <section id="top">
+      <div class="slider">
+        <div class="swiper-area">
+          <div class="swiper swiperTop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-01_PC.webp">
+                  <img src="./assets/img/img-FV-01_SP.webp" alt="">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-02_PC.webp">
+                  <img src="./assets/img/img-FV-02_SP.webp" alt="">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-03_PC.webp">
+                  <img src="./assets/img/img-FV-03_SP.webp" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper__text-wrapper">
+              <p class="swiper__text--1">一緒に</p>
+              <p class="swiper__text--2">成長</p>
+              <p class="swiper__text--3">しよう</p>
+            </div>
+            <p class="swiper__copyright">©️2023-つかさん採用サイト</p>
+          </div>
+
+        </div>
+        <div class="swiper-top-button-next"><img src="./assets/img/scroll.svg" alt=""></div>
+        <div class="swiper-top-pagination swiper-pagination--custom"></div>
+      </div>
+    </section>
 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
