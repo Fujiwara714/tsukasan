@@ -1,15 +1,36 @@
-@use "global" as *;
+@use "global"as *;
 
 .slider {
   width: 100%;
   height: 100%;
-  aspect-ratio: 375/ 652;
   position: relative;
+
   .swiper-area {
     position: relative;
+
+    @media screen and (min-width: $tab) {
+      width: vw(strip-unit($pc), 1196);
+      margin-left: auto;
+      margin-right: 0;
+    }
   }
+
   .swiper {
     position: relative;
+
+    &__pc--logo {
+      display: none;
+
+      @media screen and (min-width: $tab) {
+        position: absolute;
+        top: 0;
+        left: vw(strip-unit($pc), 4);
+        display: block;
+        width: vw(strip-unit($pc), 120);
+        height: vw(strip-unit($pc), 104);
+      }
+    }
+
     &__text-wrapper {
       z-index: 10;
       position: absolute;
@@ -21,52 +42,129 @@
       justify-content: space-between;
       flex-direction: column;
     }
-    &__text--1,
-    &__text--2,
-    &__text--3 {
+
+    &__text--sp-1,
+    &__text--sp-2,
+    &__text--sp-3 {
       color: $primary-color;
       font-weight: 700;
       font-size: rem(100);
       line-height: rem(145);
       text-align: right;
-      padding-right: rem(15);
+      padding-right: vw(strip-unit($sp), 15);
+
+      @media screen and (min-width:$tab) {
+        display: none;
+      }
     }
-    .swiper__copyright {
+
+    &__text--pc-1,
+    &__text--pc-2 {
+      display: none;
+
+      @media screen and (min-width:$tab) {
+        display: block;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: rem(120);
+      }
+    }
+
+    &__text--pc-1 {
+      position: absolute;
+      line-height: rem(120);
+      writing-mode: vertical-lr;
+      bottom: 0;
+      left: vw(strip-unit($sp), 4);
+      letter-spacing: rem(12);
+    }
+
+    &__text--pc-2 {
+      position: absolute;
+      line-height: rem(163);
+      bottom: rem(0);
+      left: vw(strip-unit($pc), 143);
+      letter-spacing: rem(12);
+    }
+
+    &__copyright__sp {
       z-index: 10;
       position: absolute;
       font-weight: 400;
       font-size: rem(13);
       line-height: rem(18);
-      bottom: rem(28);
-      left: rem(8);
+      bottom: vw(strip-unit($sp), 28);
+      left: vw(strip-unit($sp), 8);
       writing-mode: vertical-rl;
+
+      @media screen and (min-width: $tab) {
+        display: none;
+      }
     }
   }
+
   .swiper-slide {
     height: 100%;
   }
+
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .swiper-pagination--custom {
     width: fit-content;
-    margin: rem(10) auto;
+    margin: vw(strip-unit($sp), 10) auto;
+
+    @media screen and (min-width: $tab) {
+      position: absolute;
+      left: rem(44);
+      bottom: rem(0);
+      width: vw(strip-unit($pc), 30);
+      height: vh(strip-unit($pc), 79);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
   }
+
+  .swiper-copyright__pc {
+    display: none;
+
+    @media screen and (min-width: $tab) {
+      position: absolute;
+      display: block;
+      writing-mode: vertical-rl;
+      font-size: rem(13);
+      left: vw(strip-unit($pc), 50);
+      top: vw(strip-unit($pc), 50);
+    }
+  }
+
   .swiper-top-button-next {
     z-index: 15;
     position: absolute;
-    width: rem(25);
-    height: rem(25);
-    left: rem(4);
-    bottom: rem(40);
+    width: vw(strip-unit($sp), 25);
+    height: vh(strip-unit($sp), 25);
+    left: vw(strip-unit($sp), 5);
+    bottom: vw(strip-unit($sp), 2);
     transform: translateY(-50%);
+
+    @media screen and (min-width: $tab) {
+      width: vw(strip-unit($pc), 30);
+      height: vh(strip-unit($pc), 30);
+      left: vw(strip-unit($pc), 44);
+      bottom: vw(strip-unit($pc), -48);
+    }
+
     img {
       width: 100%;
       height: 100%;
     }
+
     &::after {
       display: none;
     }
@@ -75,12 +173,18 @@
 
 .swiper-pagination--custom {
   .swiper-pagination-bullet {
-    width: rem(10);
-    height: rem(10);
+    width: vw(strip-unit($sp), 10);
+    height: vh(strip-unit($sp), 10);
     border-radius: 50%;
     background-color: $primary-color;
     opacity: 0.6;
+
+    @media screen and (min-width: $tab) {
+      width: vw(strip-unit($pc), 13);
+      height: vh(strip-unit($pc), 13);
+    }
   }
+
   .swiper-pagination-bullet-active {
     opacity: 1;
   }

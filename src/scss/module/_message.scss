@@ -1,0 +1,176 @@
+@use "global"as *;
+
+// セクション全体
+#message {
+  margin-top: vw(strip-unit($sp), 80);
+
+  @media screen and (min-width: $tab) {
+    margin-top: vw(strip-unit($pc), 160);
+  }
+}
+
+//タイトル非共通部分
+.message-title {
+  @media screen and (min-width: $tab) {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    top: vw(strip-unit($pc), -75);
+    left: vw(strip-unit($pc), 256);
+  }
+
+  &__inner {
+    @media screen and (min-width: $tab) {
+      margin-right: vw(strip-unit($pc), 102.69);
+    }
+
+    &__circle {
+      top: 0;
+      left: 0;
+    }
+
+    // 表題
+    &__main-text {
+      font-size: rem(60);
+      line-height: rem(87);
+      letter-spacing: rem(6);
+      margin-left: rem(19.75);
+      color: $primary-color;
+
+      // 1文字目
+      &::first-letter {
+        color: $secondary-color;
+      }
+
+      @media screen and (min-width: $tab) {
+        font-size: rem(100);
+        line-height: rem(145);
+        letter-spacing: rem(10);
+        margin-left: vw(strip-unit($pc), 18);
+      }
+    }
+
+    &__sub-text {
+      margin-top: vw(strip-unit($sp), 20);
+
+      &>h2 {
+        @media screen and (min-width: $tab) {
+          font-size: rem(24);
+          line-height: rem(33);
+
+          &::before {
+            @media screen and (min-width: $tab) {
+              font-size: rem(24);
+              width: vw(strip-unit($pc), 13);
+              height: vh(strip-unit($pc), 13);
+              margin-right: vw(strip-unit($pc), 10.31);
+              margin-bottom: vw(strip-unit($pc), 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//インナー全体
+.message__inner {
+  max-width: vw(strip-unit($sp), 343);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tab) {
+    max-width: vw(strip-unit($pc), 1055.31);
+    position: relative;
+  }
+
+  // 画像とメッセージ
+  &__content {
+    margin-top: rem(51.19);
+
+    @media screen and (min-width: $tab) {
+      display: flex;
+    }
+
+    // 画像部分
+    &__image {
+      width: 100%;
+      height: vh(strip-unit($sp), 227.45);
+      display: flex;
+      align-items: center;
+
+      @media screen and (min-width: $tab) {
+        width: vw(strip-unit($pc), 712);
+        height: vh(strip-unit($pc), 445);
+      }
+
+      &__body {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: vw(strip-unit($sp), 331);
+        height: vh(strip-unit($sp), 205);
+        aspect-ratio: 331/220.67;
+
+        @media screen and (min-width: $tab) {
+          width: vw(strip-unit($pc), 712);
+          height: vh(strip-unit($pc), 445);
+          aspect-ratio: 712/445;
+        }
+
+        img {
+          border-top-right-radius: 20%;
+          width: 100%;
+          height: 100%;
+        }
+
+        // 画像影
+        &__shadow {
+          border-top-right-radius: 20%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: vw(strip-unit($sp), -5);
+          bottom: 0;
+          width: vw(strip-unit($sp), 329);
+          height: vh(strip-unit($sp), 205);
+          background-color: #cecdcd;
+          transform: rotate(-4deg);
+          z-index: -1;
+
+          @media screen and (min-width: $tab) {
+            width: vw(strip-unit($pc), 712);
+            height: vh(strip-unit($pc), 445);
+            left: vw(strip-unit($pc), -15);
+          }
+        }
+      }
+    }
+
+    // 文章部分
+    &__text {
+      margin-top: rem(40);
+
+      @media screen and (min-width: $tab) {
+        margin-top: auto;
+        margin-bottom: 0;
+        margin-left: vw(strip-unit($pc), 54.69);
+        width: vw(strip-unit($pc), 259);
+        height: vh(strip-unit($pc), 286);
+      }
+
+      &>p {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        color: $txt-color;
+
+        @media screen and (min-width: $tab) {
+          font-size: rem(16);
+          line-height: rem(26);
+        }
+      }
+    }
+  }
+}

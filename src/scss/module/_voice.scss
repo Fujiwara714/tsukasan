@@ -1,0 +1,106 @@
+@use "global"as *;
+
+#voice {
+  position: relative;
+  margin-top: vw(strip-unit($sp), 160);
+
+  .voice__btn {
+    margin-top: vw(strip-unit($sp), 80);
+    margin-bottom: vw(strip-unit($sp), 92);
+
+    @media screen and (min-width: $tab) {
+      margin-top: vw(strip-unit($pc), 40);
+      margin-bottom: vw(strip-unit($pc), 160);
+    }
+
+    .entry-btn {
+      margin: 0 auto;
+    }
+  }
+
+  .voice-title--img {
+    width: vw(strip-unit($sp), 224.62);
+    height: vh(strip-unit($sp), 118.21);
+    position: absolute;
+    top: vw(strip-unit($sp), -85);
+    left: vw(strip-unit($sp), 12);
+  }
+
+  .voice__inner {
+    width: 100%;
+    height: 100%;
+
+    background-color: #F4F4F4;
+
+    .slider-voice {
+      width: 100%;
+      padding: 0 rem(44);
+
+      .swiper-area {
+        position: relative;
+      }
+
+      .swiper-slide {
+        height: 100%;
+      }
+
+      .swiper-slide img {
+        width: vw(strip-unit($sp), 287);
+        height: vh(strip-unit($sp), 349);
+        aspect-ratio: vw(strip-unit($sp), 287) / vh(strip-unit($sp), 349);
+        display: block;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: vw(strip-unit($sp), 24);
+        height: vh(strip-unit($sp), 24);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .swiper-button-prev {
+        left: rem(-28.8);
+      }
+
+      .swiper-button-next {
+        right: rem(-28.8);
+      }
+    }
+
+    .voice-title--text--top,
+    .voice-title--text--bottom {
+      width: fit-content;
+      font-weight: 700;
+      font-size: rem(50);
+      line-height: rem(72);
+      letter-spacing: rem(5);
+      color: $secondary-color;
+    }
+
+    .voice-title--text--top {
+      margin-left: auto;
+      margin-right: vw(strip-unit($sp), 1);
+      margin-bottom: vw(strip-unit($sp), 2.37);
+    }
+
+    .voice-title--text--bottom {
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      margin-left: vw(strip-unit($sp), 3);
+      margin-right: auto;
+      margin-top: vw(strip-unit($sp), 7.79);
+    }
+  }
+
+
+}

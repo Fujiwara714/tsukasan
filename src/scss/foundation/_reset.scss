@@ -6,13 +6,15 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* 全ての要素についてpaddingとborderを幅と高さに含める */
+  box-sizing: border-box;
+  /* 全ての要素についてpaddingとborderを幅と高さに含める */
   outline: 1px solid green;
 }
 
 a {
   text-decoration: none;
-  color: inherit; /* 親要素から引き継ぐ */
+  color: inherit;
+  /* 親要素から引き継ぐ */
 }
 
 body,
@@ -95,6 +97,7 @@ select {
 }
 
 textarea {
-  resize: none; /* リサイズ不可 */
+  resize: none;
+  /* リサイズ不可 */
   display: block;
 }

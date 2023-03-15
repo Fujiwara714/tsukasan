@@ -46,21 +46,21 @@ const cssSass = () => {
   return gulp.src(srcPath.scss, {
     sourcemaps: true
   })
-  .pipe(
-    //エラーが出ても処理を止めない
-    plumber({
-      errorHandler: notify.onError('Error:<%= error.message %>')
+    .pipe(
+      //エラーが出ても処理を止めない
+      plumber({
+        errorHandler: notify.onError('Error:<%= error.message %>')
+      }))
+    .pipe(sass({ outputStyle: 'expanded' })) //指定できるキー expanded compressed
+    .pipe(gcmq())
+    .pipe(sassGlob())
+    .pipe(autoprefixer(TARGET_BROWSERS))// ベンダープレフィックス自動付与
+    .pipe(gulp.dest(distPath.css, { sourcemaps: './' })) //コンパイル先
+    .pipe(browserSync.stream())
+    .pipe(notify({
+      // message: 'Sassをコンパイルしました！',
+      onLast: true
     }))
-  .pipe(sass({ outputStyle: 'expanded' })) //指定できるキー expanded compressed
-  .pipe(gcmq())
-  .pipe(sassGlob())
-  .pipe(autoprefixer(TARGET_BROWSERS))// ベンダープレフィックス自動付与
-  .pipe(gulp.dest(distPath.css, { sourcemaps: './' })) //コンパイル先
-  .pipe(browserSync.stream())
-  .pipe(notify({
-    // message: 'Sassをコンパイルしました！',
-    onLast: true
-  }))
 }
 
 /**
@@ -83,9 +83,9 @@ const js = () => {
  */
 const imageWebp = () => {
   return gulp
-  .src(srcBase+'/img/**/*.+(jpg|jpeg|png)')
-  .pipe(webp())
-  .pipe(gulp.dest(distPath.img));
+    .src(srcBase + '/img/**/*.+(jpg|jpeg|png)')
+    .pipe(webp())
+    .pipe(gulp.dest(distPath.img));
 }
 
 /**
@@ -99,9 +99,9 @@ const browserSyncOption = {
   // proxy: "example.wp",// ローカルにある「Site Domain」に合わせる
   // notify: false,// ブラウザ更新時に出てくる通知を非表示にする
   // open: "external",// ローカルIPアドレスでサーバを立ち上げる
-  server : {
-    baseDir : './public_html',
-    index : ['index.html'],
+  server: {
+    baseDir: './public_html',
+    index: ['index.html'],
   },
   ghostMode: {// 同期設定
     clicks: false,
@@ -126,7 +126,7 @@ const browserSyncReload = (done) => {
  */
 const watchFiles = () => {
   gulp.watch(srcPath.scss, gulp.series(cssSass))//Sassコンパイル
-  gulp.watch(srcPath.img, gulp.series(imageWebp,browserSyncReload));//Img圧縮
+  gulp.watch(srcPath.img, gulp.series(imageWebp, browserSyncReload));//Img圧縮
   gulp.watch(srcPath.html, gulp.series(browserSyncReload))//html変更検出
   gulp.watch(srcPath.js, gulp.series(browserSyncReload))//html変更検出
 }
@@ -138,6 +138,6 @@ const watchFiles = () => {
 
 // npx gulpで起動
 exports.default = gulp.series(
-  gulp.parallel(html,js,cssSass,imageWebp),//初回起動時のみ実行
+  gulp.parallel(html, js, cssSass, imageWebp),//初回起動時のみ実行
   gulp.parallel(watchFiles, browserSyncFunc)//ファイル変更を検知するたび(watchFiles)に画面リロード(browserSyncFunc)
 );
