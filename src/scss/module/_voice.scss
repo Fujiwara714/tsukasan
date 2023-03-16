@@ -1,15 +1,20 @@
-@use "global"as *;
+@use "global" as *;
 
 #voice {
   position: relative;
   margin-top: vw(strip-unit($sp), 160);
 
+  @media screen and (min-width: $tab) {
+    margin-top: vw(strip-unit($sp), -30);
+  }
+
+  // ボタン
   .voice__btn {
     margin-top: vw(strip-unit($sp), 80);
     margin-bottom: vw(strip-unit($sp), 92);
 
     @media screen and (min-width: $tab) {
-      margin-top: vw(strip-unit($pc), 40);
+      margin-top: vw(strip-unit($pc), 80);
       margin-bottom: vw(strip-unit($pc), 160);
     }
 
@@ -18,36 +23,56 @@
     }
   }
 
+  // タイトル画像
   .voice-title--img {
     width: vw(strip-unit($sp), 224.62);
     height: vh(strip-unit($sp), 118.21);
     position: absolute;
     top: vw(strip-unit($sp), -85);
     left: vw(strip-unit($sp), 12);
+
+    @media screen and (min-width: $tab) {
+      width: vw(strip-unit($pc), 402.51);
+      height: vh(strip-unit($pc), 211.82);
+      top: vw(strip-unit($pc), -105);
+      left: vw(strip-unit($pc), 159.06);
+    }
   }
 
   .voice__inner {
     width: 100%;
     height: 100%;
+    background-color: #f4f4f4;
 
-    background-color: #F4F4F4;
+    @media screen and (min-width: $tab) {
+      overflow: hidden;
+    }
 
-    .slider-voice {
+    // SP版スライドショー
+    .slider-voice-sp {
       width: 100%;
       padding: 0 rem(44);
+
+      @media screen and (min-width: $tab) {
+        display: none;
+      }
 
       .swiper-area {
         position: relative;
       }
 
       .swiper-slide {
-        height: 100%;
+        width: vw(strip-unit($sp), 287);
+        height: vh(strip-unit($sp), 349);
+        aspect-ratio: aspect(
+          vw(strip-unit($sp), 287),
+          vh(strip-unit($sp), 349)
+        );
       }
 
       .swiper-slide img {
-        width: vw(strip-unit($sp), 287);
-        height: vh(strip-unit($sp), 349);
-        aspect-ratio: vw(strip-unit($sp), 287) / vh(strip-unit($sp), 349);
+        width: 100%;
+        height: 100%;
         display: block;
         height: 100%;
         margin: auto;
@@ -58,12 +83,10 @@
       .swiper-button-next {
         width: vw(strip-unit($sp), 24);
         height: vh(strip-unit($sp), 24);
-
         img {
           width: 100%;
           height: 100%;
         }
-
         &::after {
           display: none;
         }
@@ -78,6 +101,42 @@
       }
     }
 
+    // PC版スライドショー
+    .slider-voice-pc .swiper-area .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    .slider-voice-pc {
+      display: none;
+      @media screen and (min-width: $tab) {
+        display: block;
+      }
+      .swiper-area {
+        .swiper.swiperVoice-pc {
+          .swiper-slide {
+            width: vw(strip-unit($pc), 499);
+            height: vh(strip-unit($pc), 521.22);
+            display: flex;
+            .swiperVoice-pc__img-1,
+            .swiperVoice-pc__img-2 {
+              display: block;
+            }
+            .swiperVoice-pc__img-1 {
+              width: vw(strip-unit($pc), 249.06);
+              height: vh(strip-unit($pc), 281);
+            }
+            .swiperVoice-pc__img-2 {
+              margin-top: vw(strip-unit($pc), 220.1);
+              margin-left: vw(strip-unit($pc), -82);
+              width: vw(strip-unit($pc), 328.94);
+              height: vh(strip-unit($pc), 301.11);
+            }
+          }
+        }
+      }
+    }
+
+    // 背景文字
     .voice-title--text--top,
     .voice-title--text--bottom {
       width: fit-content;
@@ -92,6 +151,13 @@
       margin-left: auto;
       margin-right: vw(strip-unit($sp), 1);
       margin-bottom: vw(strip-unit($sp), 2.37);
+      @media screen and (min-width: $tab) {
+        font-size: rem(120);
+        line-height: rem(163);
+        letter-spacing: rem(12);
+        margin-left: auto;
+        margin-right: vw(strip-unit($pc), -25);
+      }
     }
 
     .voice-title--text--bottom {
@@ -99,8 +165,9 @@
       margin-left: vw(strip-unit($sp), 3);
       margin-right: auto;
       margin-top: vw(strip-unit($sp), 7.79);
+      @media screen and (min-width: $tab) {
+        display: none;
+      }
     }
   }
-
-
 }

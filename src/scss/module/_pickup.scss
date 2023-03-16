@@ -1,4 +1,4 @@
-@use "global"as *;
+@use "global" as *;
 
 #pickup {
   position: relative;
@@ -35,11 +35,9 @@
         height: vh(strip-unit($pc), 494);
         margin-top: vw(strip-unit($pc), 17);
         display: flex;
-
       }
 
       &__inner {
-
         &__main-text {
           font-size: rem(70);
           letter-spacing: rem(7);
@@ -59,7 +57,6 @@
       &__inner__sub-text {
         margin-top: vw(strip-unit($sp), 9);
         margin-bottom: vw(strip-unit($sp), 40);
-
         @media screen and (min-width: $tab) {
           text-align: right;
           margin-top: 0;
@@ -72,7 +69,6 @@
             font-size: rem(16);
             line-height: rem(23.17);
             letter-spacing: rem(1.5);
-
             &::before {
               @media screen and (min-width: $tab) {
                 font-size: rem(16);
@@ -130,7 +126,6 @@
     width: vw(strip-unit($pc), 300);
     height: vh(strip-unit($pc), 21);
   }
-
 
   .top-line-wrapper__line--1,
   .top-line-wrapper__line--2 {

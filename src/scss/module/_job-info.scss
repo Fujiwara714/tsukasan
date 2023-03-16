@@ -1,5 +1,4 @@
-@use "global"as *;
-
+@use "global" as *;
 
 #jobinfo {
   position: relative;
@@ -13,7 +12,7 @@
   .jobinfo__bg--color {
     width: vw(strip-unit($sp), 264);
     height: vh(strip-unit($sp), 680);
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,7 +55,8 @@
 
     @media screen and (min-width: $tab) {
       background-image: url("../img/curve-line-2-pc.svg");
-      top: vw(strip-unit($pc), 1293);
+      top: vw(strip-unit($pc), 1350);
+      z-index: 2;
     }
   }
 
@@ -124,7 +124,7 @@
           margin: 0;
         }
 
-        &>h2 {
+        & > h2 {
           font-weight: 700;
           font-size: rem(18);
           line-height: rem(25);
@@ -159,8 +159,8 @@
       width: vw(strip-unit($pc), 147);
       height: vh(strip-unit($pc), 128);
       position: absolute;
-      right: vw(strip-unit($pc), 77.25);
-      top: vw(strip-unit($pc), 1524.88);
+      right: vw(strip-unit($pc), 0);
+      top: vw(strip-unit($pc), 1450);
     }
 
     img {
