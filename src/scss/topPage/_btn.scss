@@ -1,0 +1,146 @@
+@use "global" as *;
+
+// 影ありボタン限定wrapperの共通部分
+.entry-btn-wrapper,
+.entry-btn-reverse-wrapper {
+  position: relative;
+  @media screen and (min-width: $tab) {
+    width: vw(strip-unit($pc), 400);
+  }
+}
+
+// body部分※footerは影無しの為wrapper無し
+.entry-btn-wrapper {
+  width: vw(strip-unit($sp), 237);
+  @media screen and (min-width: $tab) {
+    margin: 0 0 0 auto;
+  }
+}
+
+// footer部分
+.entry-btn-reverse-wrapper {
+  margin: 0 0 0 auto;
+  width: vw(strip-unit($sp), 333);
+}
+
+// ボタン本体
+// 共通部分とヘッダー部分
+.entry-btn-pc-no-shadow-hover,
+.entry-btn,
+.entry-btn-reverse {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  z-index: 1;
+  width: vw(strip-unit($sp), 237);
+  height: vh(strip-unit($sp), 68);
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-size: rem(16);
+  font-weight: 700;
+  padding-right: vw(strip-unit($sp), 10);
+  cursor: pointer;
+  position: relative;
+  @media screen and (min-width: $tab) {
+    padding-right: vw(strip-unit($pc), 22);
+    font-size: rem(24);
+    letter-spacing: rem(2.4);
+    line-height: rem(34.75);
+    width: vw(strip-unit($pc), 400);
+    height: vh(strip-unit($pc), 120);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/entry-btn-arrow-SP.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: vw(strip-unit($sp), 16);
+    height: vh(strip-unit($sp), 16);
+    position: absolute;
+    top: vw(strip-unit($sp), 28);
+    right: vw(strip-unit($sp), 20.5);
+
+    @media screen and (min-width: $tab) {
+      background-image: url("../img/entry-btn-arrow-PC.svg");
+      width: vw(strip-unit($pc), 24);
+      height: vh(strip-unit($pc), 24);
+      top: vw(strip-unit($pc), 51);
+      right: vw(strip-unit($pc), 30);
+    }
+  }
+}
+
+// body
+.entry-btn {
+  @media screen and (min-width: $tab) {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translate(rem(-12), rem(12));
+    }
+  }
+}
+
+// footer
+.entry-btn-reverse {
+  width: vw(strip-unit($sp), 333);
+  height: vh(strip-unit($sp), 100);
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: rem(20);
+  line-height: rem(41);
+  letter-spacing: rem(2);
+  font-weight: 700;
+  padding-right: vw(strip-unit($sp), 20);
+  padding-bottom: vw(strip-unit($sp), 5);
+  @media screen and (min-width: $tab) {
+    padding-bottom: vw(strip-unit($pc), 0);
+    line-height: rem(35);
+    letter-spacing: rem(2.4);
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translate(rem(-12), rem(12));
+    }
+  }
+  &::after {
+    background-image: url("../img/entry-btn-arrow-coler-Reverse-SP.svg");
+    width: vw(strip-unit($sp), 21);
+    height: vh(strip-unit($sp), 21);
+    top: vw(strip-unit($sp), 39);
+    right: vw(strip-unit($sp), 23);
+
+    @media screen and (min-width: $tab) {
+      background-image: url("../img/entry-btn-arrow-coler-Reverse-PC.svg");
+    }
+  }
+}
+
+// 影の共通部分
+.entry-btn-shadow,
+.entry-btn-reverse-shadow {
+  position: absolute;
+  top: rem(12);
+  right: rem(12);
+  border: rem(1) solid $txt-color;
+  background-color: #f4f4f4;
+  @media screen and (min-width: $tab) {
+    top: rem(12);
+    right: rem(12);
+    width: vw(strip-unit($pc), 400);
+    height: vh(strip-unit($pc), 120);
+  }
+}
+// body
+.entry-btn-shadow {
+  width: vw(strip-unit($sp), 237);
+  height: vh(strip-unit($sp), 68);
+  background-color: #f4f4f4;
+}
+// footer
+.entry-btn-reverse-shadow {
+  top: rem(10);
+  right: rem(10);
+  width: vw(strip-unit($sp), 333);
+  height: vh(strip-unit($sp), 100);
+  background-color: $tertiary-color;
+}

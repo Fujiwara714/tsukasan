@@ -1,0 +1,513 @@
+@use "global" as *;
+
+#entry {
+  padding-top: vw(strip-unit($sp), 75);
+  padding-bottom: vw(strip-unit($sp), 80);
+  margin: 0 auto;
+  background-image: radial-gradient(#f49b9b 14%, #f4f4f4 0%);
+  background-size: vw(strip-unit($sp), 20) vw(strip-unit($sp), 20);
+  background-position: vw(strip-unit($sp), 52) vw(strip-unit($sp), 52), 0 0;
+  @media screen and (min-width: $tab) {
+    background-size: vw(strip-unit($pc), 41) vh(strip-unit($pc), 41);
+    padding-top: vw(strip-unit($pc), 150);
+    padding-bottom: vw(strip-unit($pc), 160);
+    background-image: radial-gradient($primary-color 5%, #f4f4f4 0%);
+    background-position: vw(strip-unit($pc), 25) vw(strip-unit($pc), 65), 0 0;
+  }
+  .entry__inner {
+    position: relative;
+    background-color: $secondary-color;
+    padding-top: vw(strip-unit($sp), 80);
+    padding-bottom: vw(strip-unit($sp), 87);
+    max-width: vw(strip-unit($sp), 343);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-top-right-radius: rem(50);
+    border-bottom-left-radius: rem(50);
+    @media screen and (min-width: $tab) {
+      max-width: vw(strip-unit($pc), 1026);
+      padding-top: vw(strip-unit($pc), 160);
+      padding-bottom: vw(strip-unit($pc), 160);
+    }
+    .entry__pc--logo {
+      display: none;
+      @media screen and (min-width: $tab) {
+        display: block;
+        font-size: rem(24);
+        width: vw(strip-unit($pc), 147);
+        height: vh(strip-unit($pc), 128);
+        position: absolute;
+        bottom: vw(strip-unit($pc), -38);
+        right: vw(strip-unit($pc), -85);
+        img {
+          transform: rotate(12deg);
+        }
+      }
+    }
+    .entry-title {
+      max-width: vw(strip-unit($sp), 310);
+      margin: 0 auto;
+      @media screen and (min-width: $tab) {
+        max-width: vw(strip-unit($pc), 1026);
+        width: fit-content;
+        margin-left: vw(strip-unit($pc), 80);
+      }
+      &__inner {
+        &__circle {
+          top: vw(strip-unit($sp), 4);
+          background-color: transparent;
+          border: rem(1) solid $primary-color;
+          z-index: 2;
+          @media screen and (min-width: $tab) {
+            margin-bottom: vw(strip-unit($pc), 80);
+          }
+        }
+        &__main-text {
+          font-size: rem(60);
+          letter-spacing: rem(6);
+          line-height: rem(86.88);
+          margin-left: vw(strip-unit($sp), 25);
+          @media screen and (min-width: $tab) {
+            font-size: rem(100);
+            letter-spacing: rem(10);
+            line-height: rem(144.8);
+            margin-left: vw(strip-unit($pc), 39);
+          }
+          &::first-letter {
+            color: $primary-color;
+          }
+        }
+      }
+      &__inner__sub-text {
+        margin-top: vw(strip-unit($sp), 22);
+        margin-bottom: vw(strip-unit($sp), 41);
+        @media screen and (min-width: $tab) {
+          margin-top: vw(strip-unit($pc), 15);
+          margin-bottom: vw(strip-unit($pc), 80);
+        }
+        h2 {
+          font-weight: 700;
+          font-size: rem(18);
+          line-height: rem(25);
+          @media screen and (min-width: $tab) {
+            font-size: rem(24);
+            line-height: rem(32.69);
+            &::before {
+              @media screen and (min-width: $tab) {
+                font-size: rem(24);
+                width: vw(strip-unit($pc), 13);
+                height: vh(strip-unit($pc), 13);
+                margin-right: vw(strip-unit($pc), 10.31);
+                margin-bottom: vw(strip-unit($pc), 2);
+              }
+            }
+          }
+        }
+      }
+    }
+    .form-container {
+      max-width: vw(strip-unit($sp), 310);
+      margin: 0 auto;
+      @media screen and (min-width: $tab) {
+        max-width: vw(strip-unit($pc), 675);
+        margin: 0 auto;
+      }
+      .form__inner {
+        .form__inner__button {
+          width: fit-content;
+          margin-top: vw(strip-unit($sp), 80);
+          margin-left: auto;
+          margin-right: auto;
+          @media screen and (min-width: $tab) {
+            width: vw(strip-unit($pc), 412);
+            height: vh(strip-unit($pc), 132);
+            margin: vw(strip-unit($pc), 82) auto 0 vw(strip-unit($pc), 139);
+          }
+
+          .entry-btn::after {
+            @media screen and (min-width: $tab) {
+              right: vw(strip-unit($pc), 60);
+            }
+          }
+        }
+        &__content {
+          @media screen and (min-width: $tab) {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+          }
+          &:nth-child(3) {
+            .form__inner__content__input:last-child {
+              .form-ex {
+                margin-top: vw(strip-unit($sp), 20);
+                @media screen and (min-width: $tab) {
+                  margin-top: vw(strip-unit($pc), 10);
+                }
+              }
+            }
+          }
+
+          &:nth-child(6) {
+            .label-text {
+              @media screen and (min-width: $tab) {
+                width: vh(strip-unit($pc), 113);
+                height: vh(strip-unit($pc), 30);
+              }
+            }
+          }
+
+          &:nth-child(7) {
+            .form__inner__content__label {
+              @media screen and (min-width: $tab) {
+                height: vh(strip-unit($pc), 240);
+              }
+            }
+          }
+          &__label {
+            @media screen and (min-width: $tab) {
+              width: 100%;
+              height: vh(strip-unit($pc), 40);
+              display: flex;
+              align-items: center;
+            }
+            &__box {
+              display: flex;
+              .label-text {
+                font-weight: 700;
+                font-size: rem(13);
+                line-height: rem(18);
+                margin-right: vw(strip-unit($sp), 20);
+                @media screen and (min-width: $tab) {
+                  font-size: rem(16);
+                  line-height: rem(28);
+                  margin-right: vw(strip-unit($pc), 20);
+                }
+              }
+              .required-text {
+                font-weight: 400;
+                font-size: rem(13);
+                line-height: rem(18);
+                color: #e82f2a;
+                @media screen and (min-width: $tab) {
+                  font-size: rem(13);
+                  line-height: rem(28);
+                }
+              }
+            }
+          }
+          &__input {
+            margin-top: vw(strip-unit($sp), 20);
+            @media screen and (min-width: $tab) {
+              margin-top: 0;
+            }
+            input[type="text"] {
+              height: vh(strip-unit($sp), 40);
+              border: rem(1) solid $txt-color;
+              border-radius: rem(3);
+              padding: vw(strip-unit($sp), 2);
+              @media screen and (min-width: $tab) {
+                height: vh(strip-unit($pc), 40);
+              }
+            }
+            input[type="email"] {
+              width: vw(strip-unit($sp), 302.19);
+              height: vh(strip-unit($sp), 40);
+              border: rem(1) solid $txt-color;
+              border-radius: rem(3);
+              padding: vw(strip-unit($sp), 2);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 467.18);
+                height: vh(strip-unit($pc), 40);
+              }
+            }
+            textarea {
+              width: vw(strip-unit($sp), 302.19);
+              border: rem(1) solid $txt-color;
+              border-radius: rem(3);
+              padding: vw(strip-unit($sp), 2);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 467.18);
+              }
+            }
+            .form-ex {
+              font-weight: 400;
+              font-size: rem(13);
+              line-height: rem(18);
+              color: #9b9b9b;
+              margin-top: vw(strip-unit($sp), 10);
+              @media screen and (min-width: $tab) {
+                margin-top: vw(strip-unit($pc), 10);
+                font-size: rem(13);
+                line-height: rem(17.71);
+              }
+            }
+            #name {
+              width: vw(strip-unit($sp), 301.2);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 467.18);
+              }
+            }
+            #kana {
+              width: vw(strip-unit($sp), 301.2);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 467.18);
+              }
+            }
+            #zip {
+              width: vw(strip-unit($sp), 199.47);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 207.63);
+              }
+            }
+            #address {
+              height: vh(strip-unit($sp), 120);
+              @media screen and (min-width: $tab) {
+                margin-top: vw(strip-unit($pc), 21);
+                height: vh(strip-unit($pc), 120);
+              }
+            }
+            #tel {
+              width: vw(strip-unit($sp), 302.19);
+              @media screen and (min-width: $tab) {
+                width: vw(strip-unit($pc), 467.18);
+              }
+            }
+            #biko {
+              height: vh(strip-unit($sp), 240);
+              @media screen and (min-width: $tab) {
+                height: vh(strip-unit($pc), 240);
+              }
+            }
+            .err-msg-name,
+            .err-msg-kana,
+            .err-msg-zip,
+            .err-msg-address,
+            .err-msg-tel,
+            .err-msg-email,
+            .err-msg-emailre {
+              opacity: 0;
+              visibility: hidden;
+            }
+            .error-active {
+              color: #e82f2a;
+              font-weight: 400;
+              font-size: rem(13);
+              line-height: rem(18);
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &__privacy-policy {
+          margin-top: vw(strip-unit($sp), 40);
+          @media screen and (min-width: $tab) {
+            margin-top: vw(strip-unit($pc), 80);
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .privacy-policy-guidance {
+            font-weight: 400;
+            font-size: rem(13);
+            line-height: rem(19);
+            #open-form-modal {
+              text-decoration: underline;
+            }
+            @media screen and (min-width: $tab) {
+              font-size: rem(16);
+              line-height: rem(28);
+            }
+          }
+        }
+        &__checkbox {
+          margin-top: vw(strip-unit($sp), 20);
+          @media screen and (min-width: $tab) {
+            margin-top: vw(strip-unit($pc), 40);
+          }
+          .err-msg-checkbox {
+            opacity: 0;
+            visibility: hidden;
+          }
+          .error-active {
+            color: #e82f2a;
+            font-weight: 400;
+            font-size: rem(13);
+            line-height: rem(18);
+            opacity: 1;
+            visibility: visible;
+          }
+          .checkbox-content {
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            label {
+              font-weight: 400;
+              font-size: rem(13);
+              line-height: rem(17.71);
+              margin-bottom: vw(strip-unit($sp), 4);
+              @media screen and (min-width: $tab) {
+                font-size: rem(16);
+                line-height: rem(22);
+                letter-spacing: rem(1.6);
+              }
+            }
+            input[type="checkbox"] {
+              cursor: pointer;
+              vertical-align: middle;
+              position: relative;
+              padding-right: vw(strip-unit($sp), 26.15);
+              padding-bottom: vw(strip-unit($sp), 3);
+              @media screen and (min-width: $tab) {
+                padding-right: vw(strip-unit($pc), 30);
+                padding-bottom: vw(strip-unit($pc), 3);
+              }
+
+              &::before,
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+              }
+              &::before {
+                width: vw(strip-unit($sp), 16);
+                height: vh(strip-unit($sp), 16);
+                border: rem(1) solid $txt-color;
+                border-radius: vw(strip-unit($sp), 3);
+                transform: translateY(-50%);
+                @media screen and (min-width: $tab) {
+                  width: vw(strip-unit($pc), 16);
+                  height: vh(strip-unit($pc), 16);
+                  border-radius: vw(strip-unit($pc), 3);
+                }
+              }
+              &::after {
+                border-bottom: rem(3) solid $primary-color;
+                /*チェックの太さ*/
+                border-left: rem(3) solid $primary-color;
+                /*チェックの太さ*/
+                opacity: 0;
+                /*チェック前は非表示*/
+                height: vw(strip-unit($sp), 8);
+                /*チェックの高さ*/
+                width: vw(strip-unit($sp), 16);
+                /*チェックの横幅*/
+                transform: rotate(-45deg);
+                top: vw(strip-unit($sp), -8);
+                /*チェック時の位置調整*/
+                left: vw(strip-unit($sp), 3);
+                /*チェック時の位置調整*/
+                @media screen and (min-width: $tab) {
+                  padding-right: vw(strip-unit($pc), 10.37);
+                  height: vw(strip-unit($pc), 8);
+                  width: vw(strip-unit($pc), 16);
+                  transform: rotate(-45deg);
+                  top: vw(strip-unit($pc), -8);
+                  left: vw(strip-unit($pc), 3);
+                }
+              }
+              &:checked::after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form__inner__content + .form__inner__content {
+  margin-top: vw(strip-unit($sp), 40);
+  @media screen and (min-width: $tab) {
+    margin-top: vw(strip-unit($pc), 51);
+  }
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  @media screen and (min-width: $tab) {
+  }
+}
+
+#modal-content {
+  background-color: #ffffff;
+  max-width: vw(strip-unit($sp), 343);
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+  font-weight: 400;
+  font-size: rem(10);
+  line-height: rem(18);
+  @media screen and (min-width: $tab) {
+    font-size: rem(16);
+    line-height: rem(28);
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.scroll__inner {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 0 vw(strip-unit($sp), 20) 0 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
+  @media screen and (min-width: $tab) {
+    padding: 0 vw(strip-unit($pc), 41) 0 0;
+  }
+  &__modal-text {
+    margin-top: vw(strip-unit($sp), 10);
+    margin-left: vw(strip-unit($sp), 10);
+    @media screen and (min-width: $tab) {
+      margin-top: vw(strip-unit($pc), 42);
+      margin-bottom: vw(strip-unit($pc), 42);
+      margin-left: vw(strip-unit($pc), 39);
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+.scroll__inner::-webkit-scrollbar {
+  /* Chrome, Safari 対応 */
+  display: none;
+}
+.simplebar-scrollbar::before {
+  background: $primary-color;
+  border-radius: vw(strip-unit($sp), 10);
+  width: vw(strip-unit($sp), 10);
+  margin-left: vw(strip-unit($sp), -1);
+  margin-top: vw(strip-unit($sp), -1);
+  margin-bottom: vw(strip-unit($sp), -1);
+  @media screen and (min-width: $tab) {
+    border-radius: vw(strip-unit($pc), 10);
+    width: vw(strip-unit($pc), 20);
+    margin-left: vw(strip-unit($pc), -1);
+    margin-top: vw(strip-unit($pc), -1);
+    margin-bottom: vw(strip-unit($pc), -1);
+  }
+}
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}
+.simplebar-track {
+  background: #d9d9d9;
+  width: vw(strip-unit($sp), 10) !important;
+  @media screen and (min-width: $tab) {
+    width: vw(strip-unit($pc), 20) !important;
+  }
+}

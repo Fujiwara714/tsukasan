@@ -1,4 +1,4 @@
-@use "global"as *;
+@use "global" as *;
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -7,14 +7,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: vw(strip-unit($sp), 16);
+  scroll-behavior: smooth; // スムーススクロール
+  background-color: $secondary-color;
 
-  @media screen and (min-width : $tab) {
+  @media screen and (min-width: $tab) {
     font-size: vw(strip-unit($pc), 16);
   }
 }
 
 * {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: $noto-sans;
   color: $txt-color;
   letter-spacing: 0;
 }

@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "hjqd2avp9n");
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN24MR15TF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KN24MR15TF');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="お互いにフィードバックをし合い、助け合い、学び合う。一緒に成長することで、個人のスキルや知識を向上させ、チーム全体のパフォーマンスも向上することが期待されます。また、より良い関係を築くこともできます。つかさんは、お客様と一緒に、私たちチームと一緒に成長できる環境です。" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/destyle.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    content="お互いにフィードバックをし合い、助け合い、学び合う。一緒に成長することで、個人のスキルや知識を向上させ、チーム全体のパフォーマンスも向上することが期待されます。また、より良い関係を築くこともできます。つかさんは、お客様と一緒に、私たちチームと一緒に成長できる環境です。">
+  <meta property="og:title" content="採用サイト｜つかさん - 2023年">
+  <meta property="og:description"
+    content="お互いにフィードバックをし合い、助け合い、学び合う。一緒に成長することで、個人のスキルや知識を向上させ、チーム全体のパフォーマンスも向上することが期待されます。また、より良い関係を築くこともできます。つかさんは、お客様と一緒に、私たちチームと一緒に成長できる環境です。">
+  <meta property="og:url" content="https://masayacodingtest.com/">
+  <meta property="og:image" content="https://masayacodingtest.com/assets/img/OGP-img.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="株式会社つかさん">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/android-touch-icon.png" sizes="192x192">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <link rel="canonical" href="https://masayacodingtest.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>採用サイト｜つかさん - 2023年</title>
 </head>
 
@@ -20,7 +48,7 @@
   <header class="header">
     <div class="header__inner">
       <div class="header__inner__logo">
-        <img src="./assets/img/img-logo.svg" alt="株式会社つかさん" />
+        <a href="index.html"><img src="./assets/img/img-logo.svg" alt="株式会社つかさん" width="75" height="65"></a>
       </div>
 
       <div class="header__inner__hamburger">
@@ -30,23 +58,22 @@
     </div>
     <nav class="header__nav">
       <ul class="header__nav__ul">
-        <li class="header__nav__ul__li">メッセージ</li>
-        <li class="header__nav__ul__li"><a href="#">事業内容</a></li>
-        <li class="header__nav__ul__li">
-          <a href="#">動画で見るつかさん</a>
-        </li>
-        <li class="header__nav__ul__li"><a href="#">職場について</a></li>
-        <li class="header__nav__ul__li"><a href="#">募集要項</a></li>
-        <li class="header__nav__ul__li"><a href="#">先輩の声</a></li>
-        <li class="header__nav__ul__li"><a href="#">採用の流れ</a></li>
-        <li class="header__nav__ul__li"><a href="#">よくある質問</a></li>
-        <div class="header__nav__logo">
-          <img src="./assets/img/tsukasan-logo.svg" alt="株式会社つかさん" />
-        </div>
+        <li class="header__nav__ul__li"><a class="header-link" href="#message">メッセージ</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#business">事業内容</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#pickup">動画で見るつかさん</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#color">職場について</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#jobinfo">募集要項</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#voice">先輩の声</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#flow">採用の流れ</a></li>
+        <li class="header__nav__ul__li"><a class="header-link" href="#faq">よくある質問</a></li>
       </ul>
+      <div class="header__nav__logo">
+        <a class="header-link" href="#entry"><img src="./assets/img/tsukasan-logo.svg" alt="株式会社つかさん" width="92"
+            height="76"></a>
+      </div>
     </nav>
     <div class="header__pc--btn">
-      <button id="entry" class="entry-btn-pc-no-shadow">
+      <button class="entry-btn-pc-no-shadow-hover entry-scroll">
         エントリーはこちら
       </button>
     </div>
@@ -60,25 +87,28 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-01-PC.webp" />
-                  <img src="./assets/img/img-FV-01-SP.webp" alt="" />
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-01-PC.webp" type="image/webp"
+                    width="1196" height="645">
+                  <img src="./assets/img/img-FV-01-SP.webp" alt="一緒に成長しよう" width="375" height="585">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-02-PC.webp" />
-                  <img src="./assets/img/img-FV-02-SP.webp" alt="" />
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-02-PC.webp" type="image/webp"
+                    width="1196" height="645">
+                  <img src="./assets/img/img-FV-02-SP.webp" alt="一緒に成長しよう" width="375" height="585">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-03-PC.webp" />
-                  <img src="./assets/img/img-FV-03-SP.webp" alt="" />
+                  <source media="(min-width: 768px)" srcset="./assets/img/img-FV-03-PC.webp" type="image/webp"
+                    width="1196" height="645">
+                  <img src="./assets/img/img-FV-03-SP.webp" alt="一緒に成長しよう" width="375" height="585">
                 </picture>
               </div>
             </div>
             <div class="swiper__pc--logo">
-              <img src="./assets/img/img-logo.svg" alt="" />
+              <img src="./assets/img/img-logo.svg" alt="株式会社つかさん" width="120" height="104">
             </div>
             <div class="swiper__text-wrapper">
               <p class="swiper__text--sp-1">一緒に</p>
@@ -87,12 +117,12 @@
               <p class="swiper__text--pc-1">一緒に成</p>
               <p class="swiper__text--pc-2">長しよう</p>
             </div>
-            <p class="swiper__copyright__sp">©️2023-つかさん採用サイト</p>
+            <h1 class="swiper__copyright__sp">©️2023-つかさん採用サイト</h1>
           </div>
         </div>
         <p class="swiper-copyright__pc">©️2023-つかさん採用サイト</p>
         <div class="swiper-top-button-next">
-          <img src="./assets/img/scroll.svg" alt="" />
+          <img src="./assets/img/scroll.svg" alt="">
         </div>
         <div class="swiper-top-pagination swiper-pagination--custom"></div>
       </div>
@@ -114,15 +144,19 @@
         <div class="message__inner__content">
           <div class="message__inner__content__image">
             <div class="message__inner__content__image__body">
-              <img src="./assets/img/img-message.webp" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/img-message-PC.webp" type="image/webp"
+                  width="712" height="445">
+                <img loading="lazy" src="./assets/img/img-message-SP.webp" alt="Message" width="331" height="205">
+              </picture>
               <div class="message__inner__content__image__body__shadow"></div>
             </div>
           </div>
           <div class="message__inner__content__text">
             <p>
-              お互いにフィードバックをし合い、助け合い、学び合う。<br />
-              一緒に成長することで、個人のスキルや知識を向上させ、チーム全体のパフォーマンスも向上することが期待されます。<br />
-              また、より良い関係を築くこともできます。<br />
+              お互いにフィードバックをし合い、助け合い、学び合う。<br>
+              一緒に成長することで、個人のスキルや知識を向上させ、チーム全体のパフォーマンスも向上することが期待されます。<br>
+              また、より良い関係を築くこともできます。<br>
               つかさんは、お客様と一緒に、私たちチームと一緒に成長できる環境です。
             </p>
           </div>
@@ -133,7 +167,6 @@
     <!-- business -->
     <section id="business">
       <div class="background-line-1"></div>
-      <div class="background-line-2"></div>
       <div class="business__inner">
         <div class="section-title business-title">
           <div class="section-title__inner business-title__inner">
@@ -148,36 +181,55 @@
         <div class="media-wrapper">
           <div class="media">
             <h2 class="media__title">人材紹介・派遣</h2>
-            <figure class="media__img"><img src="./assets/img/img-business-01.webp" alt="">
-            </figure>
-            <p class="media__text">
-              広告の運用担当に特化した人材紹介・派遣サービスです。<br>
-              積極的なキャリアアップ支援と、多様な経験を積むことができるビジネス環境を提供します。
-              広告代理店に対しての紹介・派遣も行っております。
-            </p>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-business-01-PC.webp" type="image/webp"
+                width="445" height="334">
+              <img loading="lazy" src="./assets/img/img-Business-01-SP.webp" alt="Message" width="343" height="257">
+            </picture>
+            <div class="display-pc-only-text-wrapper">
+              <h2 class="media__title display-pc-only-text-wrapper-text">人材紹介・派遣</h2>
+              <p class="media__text">
+                広告の運用担当に特化した人材紹介・派遣サービスです。<br>
+                積極的なキャリアアップ支援と、多様な経験を積むことができるビジネス環境を提供します。<br>
+                広告代理店に対しての紹介・派遣も行っております。
+              </p>
+            </div>
           </div>
           <div class="media">
             <h2 class="media__title">研修・出向</h2>
-            <figure class="media__img"><img src="./assets/img/img-business-02.webp" alt="">
-            </figure>
-            <p class="media__text">
-              研修を行うことにより、新しいスキルや知識を吸収することができますし、今後のキャリアアップにも役立つことがあります。<br>
-              出向は、キャリアアップやスキルアップのための良い機会となります。また、他部署や他組織とのコミュニケーションを深めることで、人間関係も構築することができます。
-            </p>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-business-02-PC.webp" type="image/webp"
+                width="445" height="334">
+              <img loading="lazy" src="./assets/img/img-Business-02-SP.webp" alt="Message" width="343" height="257">
+            </picture>
+            <div class="display-pc-only-text-wrapper">
+              <h2 class="media__title display-pc-only-text-wrapper-text">研修・出向</h2>
+              <p class="media__text">
+                研修を行うことにより、新しいスキルや知識を吸収することができますし、今後のキャリアアップにも役立つことがあります。<br>
+                出向は、キャリアアップやスキルアップのための良い機会となります。また、他部署や他組織とのコミュニケーションを深めることで、人間関係も構築することができます。
+              </p>
+            </div>
 
           </div>
           <div class="media">
             <h2 class="media__title">広告運用</h2>
-            <figure class="media__img"><img src="./assets/img/img-business-03.webp" alt="">
-            </figure>
-            <p class="media__text">
-              広告運用は、ビジネスのマーケティング戦略の一環となります。広告運用を行うことにより、製品やサービスを多くの人々に知ってもらい、売り上げを向上させることができます。<br>
-              市場動向や消費者行動などを考慮し、市場動向や消費者行動に合わせた広告運用を行っております。
-            </p>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-business-03-PC.webp" type="image/webp"
+                width="445" height="334">
+              <img loading="lazy" src="./assets/img/img-Business-03-SP.webp" alt="Message" width="343" height="257">
+            </picture>
+            <div class="display-pc-only-text-wrapper">
+              <h2 class="media__title display-pc-only-text-wrapper-text">広告運用</h2>
+              <p class="media__text">
+                広告運用は、ビジネスのマーケティング戦略の一環となります。広告運用を行うことにより、製品やサービスを多くの人々に知ってもらい、売り上げを向上させることができます。<br>
+                市場動向や消費者行動などを考慮し、市場動向や消費者行動に合わせた広告運用を行っております。
+              </p>
+            </div>
 
           </div>
         </div>
       </div>
+      <div class="background-line-2"></div>
     </section>
 
     <!-- pickup -->
@@ -201,19 +253,16 @@
             </div>
           </div>
           <div class="youtube">
-            <iframe width="343" height="212" src="https://www.youtube.com/embed/K5MPVfVpI7A"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/K5MPVfVpI7A?&mute=1"></iframe>
           </div>
         </div>
 
-        <div class="pickup__inner--bottom">
-          <div class="pickup__inner__btn">
-            <button id="entry" class="entry-btn">
+        <div class="pickup__inner__btn">
+          <div class="entry-btn-wrapper">
+            <button class="entry-btn entry-scroll">
               エントリーはこちら
             </button>
+            <div class="entry-btn-shadow"></div>
           </div>
         </div>
       </div>
@@ -222,7 +271,7 @@
         <div class="bottom-line-wrapper__line--2"></div>
       </div>
       <div class="pickup--logo">
-        <img src="./assets/img/img-logo.svg" alt="" />
+        <img loading="lazy" src="./assets/img/img-logo.svg" alt="株式会社つかさん" width="65" height="57">
       </div>
     </section>
 
@@ -243,8 +292,11 @@
           <div class="color-media-wrapper-pc-centerline"></div>
           <div class="media color-pc-display--1">
             <h2 class="media__title">ONOFFがつけやすい</h2>
-            <figure class="media__img"><img src="./assets/img/img-color-01.webp" alt="">
-            </figure>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-color-01-PC.webp" type="image/webp"
+                width="473" height="354">
+              <img loading="lazy" src="./assets/img/img-color-01-SP.webp" alt="color" width="343" height="257">
+            </picture>
             <p class="media__text">
               プライベートが充実していると仕事も頑張れる！<br>
               しっかりと休みが取れるので、仕事とプライベートの両立がしやすい職場です。また、有給申請に理由は要りませんし、長期休暇も可能。海外旅行や推し活など、好きなことを楽しめる環境です。
@@ -263,8 +315,11 @@
 
           <div class="media color-pc-display--2">
             <h2 class="media__title">チームで動く</h2>
-            <figure class="media__img"><img src="./assets/img/img-color-03.webp" alt="">
-            </figure>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-color-03-PC.webp" type="image/webp"
+                width="473" height="354">
+              <img loading="lazy" src="./assets/img/img-color-03-SP.webp" alt="color" width="343" height="257">
+            </picture>
             <p class="media__text">
               チームで働くことで、個人では実現しきれないタスクやプロジェクトに対応することができます。<br>
               また、チームメンバー同士のコミュニケーションや協力がとても重要な要素となります。より良い結果を生み出すことができ、個人の能力を最大限に発揮することもできます。
@@ -283,8 +338,11 @@
 
           <div class="media color-pc-display--4">
             <h2 class="media__title">資格取得支援が充実</h2>
-            <figure class="media__img"><img src="./assets/img/img-color-02.webp" alt="">
-            </figure>
+            <picture class="media__img">
+              <source media="(min-width: 768px)" srcset="./assets/img/img-color-04-PC.webp" type="image/webp"
+                width="473" height="354">
+              <img loading="lazy" src="./assets/img/img-color-04-SP.webp" alt="color" width="343" height="257">
+            </picture>
             <p class="media__text">
               資格取得休暇や合格ボーナスなど、資格取得支援が充実！勿論、試験対策講座や学習教材の提供、試験に関連する情報の提供な度もございます。<br>
               資格を取得するためのハードルが下がり、キャリアアップやスキルアップなどのメリットを得ることができます。
@@ -293,7 +351,7 @@
           </div>
 
           <div class="media-no-img color-pc-display--6">
-            <h2 class="media-no-img__title">住宅手当、食事手当などが充実</h2>
+            <h2 class="media-no-img__title">住宅手当、食事手当などが<br>充実</h2>
             <p class="media-no-img__text">
               通勤手当、残業手当、住宅手当など基本的な手当のほか、誕生日には社長からのプレゼント、出産手当、結婚手当、推し活手当など、各種手当が充実しています。<br>
               私たちのモチベーションアップへも繋がっています。
@@ -302,9 +360,12 @@
         </div>
 
         <div class="color__inner__btn">
-          <button id="entry" class="entry-btn">
-            エントリーはこちら
-          </button>
+          <div class="entry-btn-wrapper">
+            <button class="entry-btn entry-scroll">
+              エントリーはこちら
+            </button>
+            <div class="entry-btn-shadow"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -336,12 +397,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -357,12 +420,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -377,12 +442,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -397,12 +464,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -416,12 +485,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -435,12 +506,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -454,12 +527,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -467,7 +542,7 @@
           <div class="info-box">
             <div class="info-content">
               <div class="info-box--left">休日休暇</div>
-              <div class="info-box--right">
+              <div class="info-box--right info-box-right-side-by-side">
                 <p>完全週休2日制(土・日) 、祝日、</p>
                 <p>年末年始休暇、年次有給休暇、</p>
                 <p>特別休暇休暇</p>
@@ -475,12 +550,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -494,12 +571,14 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
@@ -513,120 +592,107 @@
             </div>
             <div class="info-bottom-dashed">
               <picture class="info-bottom-dashed--primary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" />
-                <img src="./assets/img/dotlinePri.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
               </picture>
               <picture class="info-bottom-dashed--tertiary">
-                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" />
-                <img src="./assets/img/dotlineTer.svg" alt="" />
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
               </picture>
             </div>
           </div>
-
         </div>
       </div>
       <div class="job-info--logo">
-        <img src="./assets/img/img-logo.svg" alt="" />
+        <img loading="lazy" src="./assets/img/img-logo.svg" alt="株式会社つかさん" width="147" height="128">
       </div>
     </section>
 
     <!-- voice -->
-    <section id="voice">
+    <div id="voice">
       <div class="voice-title--img">
-        <figure>
-          <img src="./assets/img/senior-voice-titile.webp" alt="">
-        </figure>
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/img-voice-title-PC.webp" width="402" height="212"
+            type="image/webp">
+          <img loading="lazy" src="./assets/img/img-voice-titale-SP.webp" alt="先輩の声" width="225" height="118">
+        </picture>
       </div>
-
       <div class="voice__inner">
         <div class="voice-title--text--top">Senior Voice</div>
-
-        <!-- SPスライドショー -->
         <div class="slider-voice-sp">
           <div class="swiper-area">
             <div class="swiper swiperVoice-sp">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-01-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-01-SP.webp" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-02-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-02-SP.webp" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-03-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-03-SP.webp" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-04-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-04-SP.webp" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-05-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-05-SP.webp" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <picture>
-                    <img src="./assets/img/img-voice-06-SP.webp" alt="" />
-                  </picture>
+                  <img loading="lazy" width="287" height="349" src="./assets/img/img-voice-06-SP.webp" alt="先輩の声">
                 </div>
               </div>
             </div>
             <div class="swiper-button-prev">
-              <img src="./assets/img/senior-voice-slide-sp-left.svg" alt="">
+              <img loading="lazy" src="./assets/img/senior-voice-slide-sp-left.svg" alt="">
             </div>
             <div class="swiper-button-next">
-              <img src="./assets/img/senior-voice-slide-sp-right.svg" alt="">
+              <img loading="lazy" src="./assets/img/senior-voice-slide-sp-right.svg" alt="">
             </div>
           </div>
         </div>
 
-        <!-- PCスライドショー -->
         <div class="slider-voice-pc">
           <div class="swiper-area">
             <div class="swiper swiperVoice-pc">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-01-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-02-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-01-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-02-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-03-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-04-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-03-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-04-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-05-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-06-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-05-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-06-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-01-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-02-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-01-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-02-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-03-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-04-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-03-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-04-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-05-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-06-PC.webp" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-01-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-02-PC.webp" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-03-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-04-PC.webp" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiperVoice-pc__img-1" src="./assets/img/img-voice-05-PC.webp" alt="" />
-                  <img class="swiperVoice-pc__img-2" src="./assets/img/img-voice-06-PC.webp" alt="" />
+                  <img loading="lazy" class="swiperVoice-pc__img-1" src="./assets/img/img-voice-05-PC.webp" width="249"
+                    height="281" alt="先輩の声">
+                  <img loading="lazy" class="swiperVoice-pc__img-2" src="./assets/img/img-voice-06-PC.webp" width="329"
+                    height="276" alt="先輩の声">
                 </div>
               </div>
             </div>
@@ -637,16 +703,19 @@
       </div>
 
       <div class="voice__btn">
-        <button id="entry" class="entry-btn">
-          エントリーはこちら
-        </button>
+        <div class="entry-btn-wrapper">
+          <button class="entry-btn entry-scroll">
+            エントリーはこちら
+          </button>
+          <div class="entry-btn-shadow"></div>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- flow -->
     <section id="flow">
       <div class="flow-bg-line">
-        <img src="./assets/img/flow-bg-line.svg" alt="">
+        <img loading="lazy" src="./assets/img/flow-bg-line.svg" alt="">
       </div>
       <div class="flow__inner">
         <div class="section-title pickup-title">
@@ -660,11 +729,15 @@
         </div>
 
         <div class="flow-chert">
-          <div class="flow-chert_line"></div>
+          <div class="flow-chert__line"></div>
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>01</p>
               </div>
             </div>
@@ -676,7 +749,11 @@
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>02</p>
               </div>
             </div>
@@ -688,7 +765,11 @@
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>03</p>
               </div>
             </div>
@@ -700,7 +781,11 @@
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>04</p>
               </div>
             </div>
@@ -712,7 +797,11 @@
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>05</p>
               </div>
             </div>
@@ -724,7 +813,11 @@
           <div class="flow-chert__content">
             <div class="flow-chert__content__left">
               <div class="flow-chert__content__left__circle">
-                <img src="./assets/img/flow-circle.svg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/img/flow-circle-PC.svg" width="100" height="100"
+                    type="image/svg+xml">
+                  <img loading="lazy" src="./assets/img/flow-circle-SP.svg" alt="" width="100" height="100">
+                </picture>
                 <p>06</p>
               </div>
             </div>
@@ -736,10 +829,15 @@
         </div>
       </div>
       <div class="flow-img">
-        <img src="./assets/img/img-flow-irasuto.webp" alt="">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/img-flow-irasuto-PC.webp" type="image/webp"
+            width="316" height="241">
+          <img loading="lazy" src="./assets/img/img-flow-irasuto-PC.webp" alt="flow" width="343" height="262">
+        </picture>
       </div>
     </section>
 
+    <!-- faq -->
     <section id="faq">
       <div class="faq__inner">
         <div class="section-title faq-title">
@@ -754,31 +852,43 @@
 
         <div class="accordion">
           <dl class="accordion__item">
-            <dt class="accordion__title is-active">
+            <dt class="accordion__title">
               <div class="accordion__title__box">
-                <p class="accordion__title__box__qestion">Q,</p>
+                <p class="accordion__title__box__question">Q,</p>
                 <p class="accordion__title__box__text">既卒の応募は可能ですか？</p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_question.svg" width="1026"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dt>
-            <dd class="accordion__content">
+            <dd class="accordion__content" style="display:block">
               <div class="accordion__content__box">
                 <p class="accordion__content__box__answer">A,</p>
                 <p class="accordion__content__box__text">
                   既卒の応募は可能です。年齢性別国籍問わず、どなたでもご応募いただけます。<a href="#entry">エントリー</a>よりご応募ください。
                 </p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_answer.svg" width="986"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dd>
           </dl>
 
           <dl class="accordion__item">
             <dt class="accordion__title">
               <div class="accordion__title__box">
-                <p class="accordion__title__box__qestion">Q,</p>
+                <p class="accordion__title__box__question">Q,</p>
                 <p class="accordion__title__box__text">OB・OG訪問をしたいのですが、紹介していただけますか？</p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_question.svg" width="1026"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dt>
             <dd class="accordion__content">
               <div class="accordion__content__box">
@@ -787,17 +897,25 @@
                   申し訳ございませんが紹介は行っておりません。
                 </p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_answer.svg" width="986"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dd>
           </dl>
 
           <dl class="accordion__item">
             <dt class="accordion__title">
               <div class="accordion__title__box">
-                <p class="accordion__title__box__qestion">Q,</p>
+                <p class="accordion__title__box__question">Q,</p>
                 <p class="accordion__title__box__text">入社前にやっておくべきことはありますか？</p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_question.svg" width="1026"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dt>
             <dd class="accordion__content">
               <div class="accordion__content__box">
@@ -806,17 +924,25 @@
                   たくさん笑い、たくさん好きなことを行ってください！仕事へのモチベーションにもなります。
                 </p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_answer.svg" width="986"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dd>
           </dl>
 
           <dl class="accordion__item">
             <dt class="accordion__title">
               <div class="accordion__title__box">
-                <p class="accordion__title__box__qestion">Q,</p>
+                <p class="accordion__title__box__question">Q,</p>
                 <p class="accordion__title__box__text">海外勤務や転勤はありますか？</p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_question.svg" width="1026"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dt>
             <dd class="accordion__content">
               <div class="accordion__content__box">
@@ -825,17 +951,25 @@
                   転勤はありません。一部リモート可能な業務もございます。
                 </p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_answer.svg" width="986"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dd>
           </dl>
 
           <dl class="accordion__item">
             <dt class="accordion__title">
               <div class="accordion__title__box">
-                <p class="accordion__title__box__qestion">Q,</p>
+                <p class="accordion__title__box__question">Q,</p>
                 <p class="accordion__title__box__text">出産・育児・介護をサポートしてくれる制度はありますか？</p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_question.svg" width="1026"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dt>
             <dd class="accordion__content">
               <div class="accordion__content__box">
@@ -844,15 +978,456 @@
                   つかさんは出産・育児・介護サポートに力を入れています！
                 </p>
               </div>
-              <img src="./assets/img/faq-bottom-line.svg" alt="" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/faq-bottom-line-PC_answer.svg" width="986"
+                  height="2" type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/faq-bottom-line-SP.svg" alt="" width="343" height="2">
+              </picture>
             </dd>
           </dl>
         </div>
       </div>
     </section>
+
+    <!-- company -->
+    <section id="company">
+      <div class="company__bg--line-1"></div>
+      <div class="company__inner">
+        <div class="section-title company-title">
+          <div class="section-title__inner company-title__inner">
+            <p class="section-title__inner__circle  company-title__inner__circle"></p>
+            <p class="section-title__inner__main-text company-title__inner__main-text">Company</p>
+          </div>
+          <div class="section-title__inner__sub-text company-title__inner__sub-text">
+            <h2>会社概要</h2>
+          </div>
+        </div>
+
+        <div class="info-wrapper">
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">名称</div>
+              <div class="info-box--right">
+                <p>株式会社になりたいつかさん</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">本社所在地</div>
+              <div class="info-box--right">
+                <p>【埼玉オフィス】</p>
+                <p>〒111-1111</p>
+                <div class="info-box-right-side-by-side">
+                  <p>埼玉県つかさん市かなさん</p>
+                  <p>1-1-1</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">電話番号</div>
+              <div class="info-box--right">
+                <p>000-0000-0000</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">創業</div>
+              <div class="info-box--right">
+                <p>2021年1月26日</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">資本金</div>
+              <div class="info-box--right">
+                <p>500万円</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">代表者</div>
+              <div class="info-box--right">
+                <p>半屋　司</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">従業員数</div>
+              <div class="info-box--right">
+                <p>99名</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-content">
+              <div class="info-box--left">事業内容</div>
+              <div class="info-box--right">
+                <p>人材紹介・派遣</p>
+                <p>研修</p>
+                <p>広告運用</p>
+              </div>
+            </div>
+            <div class="info-bottom-dashed">
+              <picture class="info-bottom-dashed--primary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlinePri-pc.svg" width="200" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlinePri-sp.svg" alt="" width="80" height="2">
+              </picture>
+              <picture class="info-bottom-dashed--tertiary">
+                <source media="(min-width: 768px)" srcset="./assets/img/dotlineTer-pc.svg" width="664" height="2"
+                  type="image/svg+xml">
+                <img loading="lazy" src="./assets/img/dotlineTer-sp.svg" alt="" width="263" height="2">
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- entry -->
+    <section id="entry">
+      <div class="entry__inner">
+
+        <div class="section-title entry-title">
+          <div class="section-title__inner entry-title__inner">
+            <p class="section-title__inner__circle  entry-title__inner__circle"></p>
+            <p class="section-title__inner__main-text entry-title__inner__main-text">Entry</p>
+          </div>
+          <div class="section-title__inner__sub-text entry-title__inner__sub-text">
+            <h2>エントリー</h2>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <form class="form__inner" method="POST">
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="name" class="label-text">お名前</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <input type="text" name="name" id="name" required>
+                <p class="err-msg-name"></p>
+                <p class="form-ex">例）山田　太郎</p>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="kana" class="label-text">フリガナ</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <input type="text" name="kana" id="kana" required>
+                <p class="err-msg-kana"></p>
+                <p class="form-ex">例）ヤマダ　タロウ</p>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="address" class="label-text">住所</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input--adress">
+                <div class="form__inner__content__input">
+                  <input type="text" name="zip" id="zip" required>
+                  <p class="err-msg-zip"></p>
+                  <p class="form-ex">例）〒111-1111</p>
+                </div>
+                <div class="form__inner__content__input">
+                  <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                  <p class="err-msg-address"></p>
+                  <p class="form-ex">例）福岡県〇〇市〇〇1-1-1　〇〇コーポ111</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="tel" class="label-text">お電話番号</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <input type="text" name="tel" id="tel" required>
+                <p class="err-msg-tel"></p>
+                <p class="form-ex">例）012-345-6789</p>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="email" class="label-text">メールアドレス</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <input type="email" name="email" id="email" required>
+                <p class="err-msg-email"></p>
+                <p class="form-ex">例）THUKASAN@sansan.co.jp</p>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="email-re" class="label-text">メールアドレス（確認）</label>
+                  <p class="required-text">必須</p>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <input type="email" name="email-re" id="email-re" required>
+                <p class="err-msg-emailre"></p>
+                <p class="form-ex">例）THUKASAN@sansan.co.jp</p>
+              </div>
+            </div>
+
+            <div class="form__inner__content">
+              <div class="form__inner__content__label">
+                <div class="form__inner__content__label__box">
+                  <label for="biko" class="label-text">備考</label>
+                </div>
+              </div>
+              <div class="form__inner__content__input">
+                <textarea name="biko" id="biko"></textarea>
+              </div>
+            </div>
+
+            <div class="form__inner__privacy-policy">
+              <p class="privacy-policy-guidance">
+                ご送信の前に、必ず「<a href="#" id="open-form-modal">プライバシーポリシー</a>」をお読みのうえ、ご同意願います。
+              </p>
+            </div>
+
+            <div class="form__inner__checkbox">
+              <div class="checkbox-content">
+                <input type="checkbox" name="checkbox" id="checkbox" value="check" required>
+                <label for="checkbox">個人情報の取り扱いについて同意する</label>
+                <p class="err-msg-checkbox"></p>
+              </div>
+            </div>
+
+            <div class="form__inner__button">
+              <div class="entry-btn-wrapper">
+                <button type="submit" class="submit entry-btn">
+                  エントリーする
+                </button>
+                <div class="entry-btn-shadow"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="entry__pc--logo">
+          <img loading="lazy" src="./assets/img/img-logo.svg" alt="株式会社つかさん" width="147" height="128">
+        </div>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div id="modal">
+      <div id="modal-content">
+        <div class="scroll__inner" data-simplebar data-simplebar-auto-hide="false">
+          <div class="scroll__inner__modal-text">
+            第1条（個人情報）<br>
+            「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。<br>
+            第2条（個人情報の収集方法）<br>
+            当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。<br>
+            第3条（個人情報を収集・利用する目的）<br>
+            当社が個人情報を収集・利用する目的は，以下のとおりです。<br>
+            当社サービスの提供・運営のため<br>
+            ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）<br>
+            ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため<br>
+            メンテナンス，重要なお知らせなど必要に応じたご連絡のため<br>
+            利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため<br>
+            ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため<br>
+            有料サービスにおいて，ユーザーに利用料金を請求するため<br>
+            上記の利用目的に付随する目的<br>
+            第4条（利用目的の変更）<br>
+            当社は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。<br>
+            利用目的の変更を行った場合には，変更後の目的について，当社所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。<br>
+            第5条（個人情報の第三者提供）<br>
+            当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。ただし，個人情報保護法その他の法令で認められる場合を除きます。<br>
+            人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+            公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+            国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって，本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき<br>
+            予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき<br>
+            利用目的に第三者への提供を含むこと<br>
+            第三者に提供されるデータの項目<br>
+            第三者への提供の手段または方法<br>
+            本人の求めに応じて個人情報の第三者への提供を停止すること<br>
+            本人の求めを受け付ける方法<br>
+            前項の定めにかかわらず，次に掲げる場合には，当該情報の提供先は第三者に該当しないものとします。<br>
+            当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合<br>
+            合併その他の事由による事業の承継に伴って個人情報が提供される場合<br>
+            個人情報を特定の者との間で共同して利用する場合であって，その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について，あらかじめ本人に通知し，または本人が容易に知り得る状態に置いた場合<br>
+            第6条（個人情報の開示）<br>
+            当社は，本人から個人情報の開示を求められたときは，本人に対し，遅滞なくこれを開示します。ただし，開示することにより次のいずれかに該当する場合は，その全部または一部を開示しないこともあり，開示しない決定をした場合には，その旨を遅滞なく通知します。なお，個人情報の開示に際しては，1件あたり1，000円の手数料を申し受けます。<br>
+            本人または第三者の生命，身体，財産その他の権利利益を害するおそれがある場合<br>
+            当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合<br>
+            その他法令に違反することとなる場合<br>
+            前項の定めにかかわらず，履歴情報および特性情報などの個人情報以外の情報については，原則として開示いたしません。<br>
+            第7条（個人情報の訂正および削除）<br>
+            ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。<br>
+            当社は，ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の訂正等を行うものとします。<br>
+            当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これをユーザーに通知します。<br>
+            第8条（個人情報の利用停止等）<br>
+            当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には，遅滞なく必要な調査を行います。<br>
+            前項の調査結果に基づき，その請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の利用停止等を行います。<br>
+            当社は，前項の規定に基づき利用停止等を行った場合，または利用停止等を行わない旨の決定をしたときは，遅滞なく，これをユーザーに通知します。<br>
+            前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。<br>
+            第9条（プライバシーポリシーの変更）<br>
+            本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。<br>
+            当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。<br>
+            第10条（お問い合わせ窓口）<br>
+            本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。<br>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer-top">
+        <div class="footer-info-wrapper">
+          <h2 class="footer-info__name">株式会社つかさん</h2>
+          <div class="footer-info__address">
+            <p class="footer-info__address__zip">〒111-1111</p>
+            <p class="footer-info__address__address">埼玉県つかさん市かなさん1-1-1</p>
+            <p class="footer-info__address__tel">TEL：000-0000-0000</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__button">
+          <div class="entry-btn-reverse-wrapper">
+            <button class="entry-btn-reverse entry-scroll">
+              エントリーはこちら
+            </button>
+            <div class="entry-btn-reverse-shadow entry-scroll"></div>
+          </div>
+        </div>
+        <picture class="footer-bottom__top-Scroll-btn">
+          <source media="(min-width: 768px)" srcset="./assets/img/footer-topscroll-PC.svg" width="30" height="30"
+            type="image/svg+xml">
+          <img loading="lazy" src="./assets/img/footer-topscroll-SP.svg" alt="" width="30" height="30">
+        </picture>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </body>
 
 </html>
